@@ -34,7 +34,7 @@ public class LiquidContainers {
             
             if (command.equalsIgnoreCase("move")) {
                 if (amount > containerOne) {
-                    containerOne = amount;
+                    amount = containerOne;
                 }
                 containerOne -= amount; 
                 containerTwo += amount; 
