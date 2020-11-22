@@ -6,7 +6,6 @@ import java.util.Scanner;
 public class Main {
 
     public static void main(String[] args) {
-        /*
         Warehouse warehouse = new Warehouse();
         warehouse.addProduct("coffee", 5, 10);
         warehouse.addProduct("milk", 3, 20);
@@ -16,18 +15,6 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
 
         Store store = new Store(warehouse, scanner);
-        store.shop("John"); */
-        
-        ShoppingCart cart = new ShoppingCart();
-        cart.add("milk", 3);
-        cart.add("sausage", 7);
-        cart.add("milk", 3);
-        cart.add("milk", 3);
-        cart.add("sausage", 7);
-        cart.add("cream", 2);
-        cart.print();
-        
-       /*  */
-        
+        store.shop("John"); 
     }
 }

@@ -37,6 +37,10 @@ public class Store {
                 break;
             }
             
+            if (!warehouse.products().contains(product)) {
+                continue;
+            }
+            
             cart.add(product, warehouse.price(product));
             
             if (warehouse.products().contains(product)) {
@@ -48,7 +52,7 @@ public class Store {
             // Dont't touch any of the other code!
         }
 
-        System.out.println("your shoppingcart contents:");
+        System.out.println("your shopping cart contents:");
         cart.print();
         System.out.println("total: " + cart.price());
     }
