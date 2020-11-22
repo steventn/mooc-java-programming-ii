@@ -1,0 +1,32 @@
+-------------------------------------------------------------------------------
+Test set: C_ShoppingCartTest
+-------------------------------------------------------------------------------
+Tests run: 17, Failures: 3, Errors: 0, Skipped: 0, Time elapsed: 0.104 s <<< FAILURE! - in C_ShoppingCartTest
+shoppingWorks(C_ShoppingCartTest)  Time elapsed: 0.1 s  <<< FAILURE!
+java.lang.AssertionError: 
+the store was created just like in the example and the customers input was coffee<enter>bread<enter>water<enter><enter>
+ the stock of coffee should be reduced by one expected:<9> but was:<10>
+	at C_ShoppingCartTest.shoppingWorks(C_ShoppingCartTest.java:330)
+
+addingTheSameProductTwiceDoesNotCreateTwoItems(C_ShoppingCartTest)  Time elapsed: 0 s  <<< FAILURE!
+java.lang.AssertionError: 
+Make sure ShoppingCart's method print functions like shown in the example, when the same product is added to the cart twice 
+cart = new ShoppingCart(); 
+cart.add("milk",3); 
+cart.add("milk",3); 
+cart.print() the number of lines to print expected:<1> but was:<2>
+	at C_ShoppingCartTest.addingTheSameProductTwiceDoesNotCreateTwoItems(C_ShoppingCartTest.java:241)
+
+oneProductMultipleTimesAndSeveralOtherProducts(C_ShoppingCartTest)  Time elapsed: 0.001 s  <<< FAILURE!
+java.lang.AssertionError: 
+Make sure ShoppingCart's method print functions like shown in the example, when one product was added to the cart multiple times 
+cart = new ShoppingCart(); 
+cart.add("milk",3); 
+cart.add("sausage",7); 
+cart.add("milk",3); 
+cart.add("milk",3); 
+cart.add("sausage",7); 
+cart.add("cream", 2);
+cart.price() the number of lines printed expected:<3> but was:<6>
+	at C_ShoppingCartTest.oneProductMultipleTimesAndSeveralOtherProducts(C_ShoppingCartTest.java:277)
+
