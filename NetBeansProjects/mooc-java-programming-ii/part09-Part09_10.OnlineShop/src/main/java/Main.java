@@ -6,6 +6,7 @@ import java.util.Scanner;
 public class Main {
 
     public static void main(String[] args) {
+        /*
         Warehouse warehouse = new Warehouse();
         warehouse.addProduct("coffee", 5, 10);
         warehouse.addProduct("milk", 3, 20);
@@ -15,42 +16,18 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
 
         Store store = new Store(warehouse, scanner);
-        store.shop("John");
+        store.shop("John"); */
         
-        /* 
-private Warehouse warehouse;
-    private Scanner scanner;
-
-    public Store(Warehouse warehouse, Scanner scanner) {
-        this.warehouse = warehouse;
-        this.scanner = scanner;
-    }
-
-    // the method that handles the customers visit to the store.
-    public void shop(String customer) {
         ShoppingCart cart = new ShoppingCart();
-        System.out.println("Welcome to the store " + customer);
-        System.out.println("our selection:");
-
-        for (String product : this.warehouse.products()) {
-            System.out.println(product);
-        }
-
-        while (true) {
-            System.out.print("What to put in the cart (press enter to go to the register): ");
-            String product = scanner.nextLine();
-            if (product.isEmpty()) {
-                break;
-            }
-
-            // Add code here that adds the product to the cart,
-            // If there is any in the warehouse, and reduces the stock in the warehouse
-            // Dont't touch any of the other code!
-        }
-
-        System.out.println("your shoppingcart contents:");
+        cart.add("milk", 3);
+        cart.add("sausage", 7);
+        cart.add("milk", 3);
+        cart.add("milk", 3);
+        cart.add("sausage", 7);
+        cart.add("cream", 2);
         cart.print();
-        System.out.println("total: " + cart.price());
-*/
+        
+       /*  */
+        
     }
 }
