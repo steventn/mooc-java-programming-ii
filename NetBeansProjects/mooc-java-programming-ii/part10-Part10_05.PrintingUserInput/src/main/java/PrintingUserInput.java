@@ -1,0 +1,24 @@
+
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class PrintingUserInput {
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        ArrayList<String> inputList = new ArrayList<>();
+        System.out.println("Enter a string, blank to end");
+        
+        while(true) {
+            String input = scanner.nextLine();
+            if (input.isEmpty()) {
+                break;
+            }
+            
+            inputList.add(input);
+        }
+        
+        inputList.stream()
+                .forEach(value -> System.out.println(value));
+    }
+}
